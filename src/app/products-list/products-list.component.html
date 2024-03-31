@@ -1,1 +1,11 @@
-<p>products-list works!</p>
+<section id="products-list">
+  <div id="header">
+    <h2>Каталог</h2>
+  </div>
+  <mat-divider></mat-divider>
+  <div id="body">
+    <app-product-card
+      *ngFor="let product of productsList"
+      [product]="product"></app-product-card>
+  </div>
+</section>
