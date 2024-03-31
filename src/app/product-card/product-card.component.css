@@ -17,7 +17,6 @@
   padding: 0.7rem;
   padding-top: 1.2rem;
   padding-bottom: 1.2rem;
-  /* background-color: #ccc; */
   position: relative;
 
   -webkit-box-shadow: inset 0px -200px 149px -200px rgba(0,0,0,0.62);
@@ -41,7 +40,7 @@
 #name-outter > h4 {
   text-align: right;
   font-weight: 900;
-  font-size: 18pt;
+  font-size: 16pt;
 }
 
 #price-outter {
