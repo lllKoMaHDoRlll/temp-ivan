@@ -1,1 +1,23 @@
-<p>form works!</p>
+<section id="form-outter">
+  <div id="header">
+    <h2>Обратная связь</h2>
+  </div>
+  <mat-divider></mat-divider>
+  <form>
+    <mat-form-field>
+      <mat-label>Ваше Имя</mat-label>
+      <input matInput placeholder="Имя" value="">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Ваш телефон</mat-label>
+      <input type="tel" matInput placeholder="Телефон" value="">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Ваш вопрос</mat-label>
+      <textarea matInput placeholder="Вопрос"></textarea>
+    </mat-form-field>
+    <button mat-flat-button color="primary">
+        Отправить
+    </button>
+  </form>
+</section>
