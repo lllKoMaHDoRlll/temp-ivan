@@ -1,0 +1,10 @@
+section {
+  display: flex;
+  flex-direction: row;
+  margin: 5%;
+  gap: 6%;
+}
+
+app-contacts, app-form {
+  width: 100%;
+}

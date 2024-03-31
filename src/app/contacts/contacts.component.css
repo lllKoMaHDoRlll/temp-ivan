@@ -1,0 +1,32 @@
+#body {
+  display: flex;
+  flex-direction: column;
+  padding: 2%;
+  overflow: hidden;
+  border-radius: 20px;
+
+  -webkit-box-shadow: 0px 0px 137px -63px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 0px 0px 137px -63px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 137px -63px rgba(0, 0, 0, 0.5);
+}
+
+#content {
+  display: flex;
+  flex-direction: column;
+}
+
+#contacts {
+  padding: 3%;
+}
+
+#social-networks > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+fa-icon {
+  color: #000;
+}
+
+

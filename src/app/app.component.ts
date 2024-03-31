@@ -3,6 +3,8 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './header/header.component';
 import { ThumbnailComponent } from './thumbnail/thumbnail.component';
 import { ProductsListComponent } from './products-list/products-list.component';
+import { ContactsComponent } from './contacts/contacts.component';
+import { FormComponent } from './form/form.component';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +13,9 @@ import { ProductsListComponent } from './products-list/products-list.component';
     RouterOutlet,
     HeaderComponent,
     ThumbnailComponent,
-    ProductsListComponent
+    ProductsListComponent,
+    ContactsComponent,
+    FormComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
