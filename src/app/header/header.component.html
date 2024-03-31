@@ -1,1 +1,16 @@
-<p>header works!</p>
+<c-header>
+  <c-container fluid>
+    <c-header-brand >Кроссовки</c-header-brand>
+    <c-header-nav class="ms-auto">
+      <c-nav-item>
+        <a [active]="true" cNavLink>Каталог</a>
+      </c-nav-item>
+      <c-nav-item>
+        <a cNavLink routerLink="/components/alert">Контакты</a>
+      </c-nav-item>
+      <c-nav-item>
+        <a cNavLink routerLink="/components/alert">Обратная связь</a>
+      </c-nav-item>
+    </c-header-nav>
+  </c-container>
+</c-header>
