@@ -1,0 +1,17 @@
+<section id="outter">
+  <div id="photo">
+    <img [src]="product?.imageFilePath" alt="Product photo">
+  </div>
+  <div id="content">
+    <div id="header">
+      <h1>
+        {{product?.name}}
+      </h1>
+    </div>
+    <div id="body">
+      <p id="description">{{product?.description}}
+      </p>
+      <p id="price">Цена: <span>{{product?.price}}$</span></p>
+    </div>
+  </div>
+</section>

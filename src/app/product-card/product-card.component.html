@@ -1,4 +1,4 @@
-<div id="product">
+<a id="product" [routerLink]="['/product', product.id]">
   <div id="photo">
     <img [src]="product.imageFilePath" alt="Product Photo">
   </div>
@@ -10,4 +10,4 @@
       <span>{{product.price}}</span>
     </div>
   </div>
-</div>
+</a>

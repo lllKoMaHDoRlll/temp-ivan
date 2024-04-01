@@ -3,6 +3,7 @@ import { HeaderModule } from '@coreui/angular';
 import { ContainerComponent } from '@coreui/angular';
 import { NavModule } from '@coreui/angular';
 import { DropdownModule } from '@coreui/angular';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -11,7 +12,8 @@ import { DropdownModule } from '@coreui/angular';
     HeaderModule,
     ContainerComponent,
     NavModule,
-    DropdownModule
+    DropdownModule,
+    RouterModule
   ],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
