@@ -13,5 +13,7 @@ import { MatSlideToggleModule } from '@angular/material/slide-toggle';
   styleUrl: './thumbnail.component.css'
 })
 export class ThumbnailComponent {
-
+  scrollToProductsList() {
+    (document.getElementById("products-list") as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 }

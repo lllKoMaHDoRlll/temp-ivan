@@ -17,5 +17,13 @@ import { DropdownModule } from '@coreui/angular';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-
+  scrollToProductsList() {
+    (document.getElementById("products-list") as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+  scrollToContacts() {
+    (document.getElementById("contacts") as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
+  scrollToForm() {
+    (document.getElementById("form-outter") as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 }
