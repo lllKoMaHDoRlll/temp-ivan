@@ -6,10 +6,10 @@
         <a [active]="true" cNavLink [routerLink]="['/']" (click)="scrollToProductsList()">Каталог</a>
       </c-nav-item>
       <c-nav-item>
-        <a cNavLink (click)="scrollToContacts()">Контакты</a>
+        <a cNavLink [routerLink]="['/']" (click)="scrollToContacts()">Контакты</a>
       </c-nav-item>
       <c-nav-item>
-        <a cNavLink (click)="scrollToForm()">Обратная связь</a>
+        <a cNavLink [routerLink]="['/']" (click)="scrollToForm()">Обратная связь</a>
       </c-nav-item>
     </c-header-nav>
   </c-container>
