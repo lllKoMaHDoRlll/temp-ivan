@@ -40,3 +40,13 @@
 #price {
   font-size: 20pt;
 }
+
+.buy-form {
+  display: flex;
+  gap: 1em;
+  width: 100%;
+}
+
+.buy-form-button {
+  flex-grow: 1;
+}

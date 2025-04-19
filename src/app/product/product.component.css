@@ -2,13 +2,11 @@ section {
   padding: 5%;
   padding-bottom: 0;
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 app-product-thumbnail {
-  width: 55%;
+  max-width: 75%;
 }
 
-app-form {
-  width: 35%;
-}

@@ -9,9 +9,15 @@
       </h1>
     </div>
     <div id="body">
-      <p id="description">{{product?.description}}
-      </p>
-      <p id="price">Цена: <span>{{product?.price}}$</span></p>
+      <p id="description">{{product?.description}}</p>
+      <p id="price">Цена: <span>{{product?.price}} &#8381;</span></p>
+    </div>
+    <div class="buy-form">
+      <button mat-stroked-button [matMenuTriggerFor]="menu">Размер: {{ selectedSize === -1 ? '' : selectedSize }}</button>
+      <button mat-flat-button color="primary" class="buy-form-button" (click)="addToCart()">Купить</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item *ngFor="let size of sizes" (click)="selectedSize = size">{{ size }}</button>
+      </mat-menu>
     </div>
   </div>
 </section>

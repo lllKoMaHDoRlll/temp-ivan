@@ -113,6 +113,10 @@ export class ProductingService {
       description: "Кроссовки Air Jordan 5 были разработаны Тинкером Хэтфилдом, легендарным дизайнером Nike, подарившим миру серию Air Max и многие другие хиты. Внешний вид Air Jordan 5 был вдохновлен самолетами."
     }
   ];
+
+  cart: Product[] = [];
+  cartValue = 0;
+
   constructor() { }
 
   getAllProductsList(): Product[] {
@@ -121,5 +125,14 @@ export class ProductingService {
 
   getProductById(id: number): Product | undefined {
     return this.productsList.find(product => product.id === id);
+  }
+
+  addProductToCart(product: Product) {
+    this.cart.push(product);
+    this.cartValue += product.price;
+  }
+
+  getProductsFromCart() {
+    return this.cart;
   }
 }
