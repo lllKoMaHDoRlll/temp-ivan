@@ -21,9 +21,9 @@
   padding-bottom: 1.2rem;
   position: relative;
 
-  -webkit-box-shadow: inset 0px -200px 149px -200px rgba(0,0,0,0.62);
-  -moz-box-shadow: inset 0px -200px 149px -200px rgba(0,0,0,0.62);
-  box-shadow: inset 0px -200px 149px -200px rgba(0,0,0,0.62);
+  -webkit-box-shadow: inset 0px -200px 149px -200px rgba(0,0,0,0.4);
+  -moz-box-shadow: inset 0px -200px 149px -200px rgba(0,0,0,0.4);
+  box-shadow: inset 0px -200px 149px -200px rgba(0,0,0,0.4);
 }
 
 #photo {
@@ -34,36 +34,8 @@
   width: 100%;
 }
 
-#name-outter {
-  position: relative;
-  z-index: 10;
-}
-
 #name-outter > h4 {
   text-align: right;
   font-weight: 900;
   font-size: 16pt;
-}
-
-#price-outter {
-  position: absolute;
-  width: max-content;
-  height: max-content;
-  bottom: -30px;
-  left: -15px;
-}
-
-#price-outter > span {
-  position: relative;
-  font-size: 80pt;
-  font-family: "Rubik Mono One", monospace;
-  font-weight: 400;
-  font-style: normal;
-  letter-spacing: -5pt;
-  color: #fff;
-}
-
-#button-outter {
-  display: flex;
-  flex-direction: row-reverse;
 }
