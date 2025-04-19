@@ -1,0 +1,23 @@
+<section id="products-list">
+  <div id="header">
+    <h2>Корзина</h2>
+  </div>
+  <mat-divider></mat-divider>
+  <div id="body">
+    <ng-container *ngIf="productsList.length !== 0; else elseTemplate">
+      <app-product-card
+        *ngFor="let product of productsList"
+        [product]="product"></app-product-card>
+    </ng-container>
+    <ng-template #elseTemplate>
+      <p class="emty-cart-message">
+        Корзина пуста!
+      </p>
+    </ng-template>
+  </div>
+  <mat-divider />
+  <div class="total">
+    <span class="total-value">Итого: {{ productingService.cartValue }} &#8381;</span>
+    <button mat-flat-button color="primary">Купить</button>
+  </div>
+</section>
