@@ -21,7 +21,6 @@ import { MatButtonModule } from '@angular/material/button';
 export class CartProductsListComponent {
   productsList: Product[] = [];
   productingService: ProductingService = inject(ProductingService);
-  totalValue = this.productsList.map((val) => val.price).reduce((prev, cur) => prev + cur, 0);
 
   constructor() {
     this.productsList = this.productingService.getProductsFromCart();
