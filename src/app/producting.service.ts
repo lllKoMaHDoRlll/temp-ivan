@@ -113,6 +113,10 @@ export class ProductingService {
       description: ""
     }
   ];
+
+  cart: Product[] = [];
+  cartValue = 0;
+
   constructor() { }
 
   getAllProductsList(): Product[] {
@@ -121,5 +125,14 @@ export class ProductingService {
 
   getProductById(id: number): Product | undefined {
     return this.productsList.find(product => product.id === id);
+  }
+
+  addProductToCart(product: Product) {
+    this.cart.push(product);
+    this.cartValue += product.price;
+  }
+
+  getProductsFromCart() {
+    return this.cart;
   }
 }
