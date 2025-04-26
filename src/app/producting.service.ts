@@ -151,6 +151,7 @@ export class ProductingService {
   removeProductFromCart(item: CartProduct) {
     const itemIndex = this.cart.findIndex((value) => value === item);
     this.cart.splice(itemIndex, 1);
+    this.cartValue -= item.product.price;
   }
 
   getProductsFromCart() {
