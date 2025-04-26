@@ -1,5 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Product } from './product';
+import { CartProduct } from './cart-product';
 
 @Injectable({
   providedIn: 'root'
@@ -129,7 +130,7 @@ export class ProductingService {
     }
   ];
 
-  cart: Product[] = [];
+  cart: CartProduct[] = [];
   cartValue = 0;
 
   constructor() { }
@@ -142,9 +143,14 @@ export class ProductingService {
     return this.productsList.find(product => product.id === id);
   }
 
-  addProductToCart(product: Product) {
-    this.cart.push(product);
+  addProductToCart(product: Product, size: number) {
+    this.cart.push({product: product, size: size});
     this.cartValue += product.price;
+  }
+
+  removeProductFromCart(item: CartProduct) {
+    const itemIndex = this.cart.findIndex((value) => value === item);
+    this.cart.splice(itemIndex, 1);
   }
 
   getProductsFromCart() {

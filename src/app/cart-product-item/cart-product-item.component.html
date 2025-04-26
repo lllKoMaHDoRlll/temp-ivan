@@ -1,0 +1,7 @@
+<div class="cart-item">
+  <span class="name">{{ item.product.name }}</span>
+  <span class="price">Цена: {{ item.product.price }}</span>
+  <span class="size">Размер: {{ item.size }}</span>
+  <button mat-flat-button fluid color="warn" (click)="removeItemFromCart()">Убрать</button>
+</div>
+<mat-divider/>

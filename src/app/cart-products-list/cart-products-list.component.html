@@ -5,9 +5,10 @@
   <mat-divider></mat-divider>
   <div id="body">
     <ng-container *ngIf="productsList.length !== 0; else elseTemplate">
-      <app-product-card
-        *ngFor="let product of productsList"
-        [product]="product"></app-product-card>
+      <app-cart-product-item
+        *ngFor="let item of productsList"
+        [item]="item"
+        style="width: 100%;"></app-cart-product-item>
     </ng-container>
     <ng-template #elseTemplate>
       <p class="emty-cart-message">

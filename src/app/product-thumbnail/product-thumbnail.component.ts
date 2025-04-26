@@ -31,7 +31,7 @@ export class ProductThumbnailComponent {
       alert("Выберите размер");
       return;
     }
-    this.productingService.addProductToCart(this.product!);
+    this.productingService.addProductToCart(this.product!, this.selectedSize);
     this.router.navigateByUrl("cart");
   }
 }
