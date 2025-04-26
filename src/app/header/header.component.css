@@ -1,0 +1,17 @@
+.brand-logo {
+  aspect-ratio: 1;
+  width: 2em;
+  margin-right: .75em;
+}
+
+.brand-name {
+  font-size: 1.4rem;
+}
+
+.header-container {
+  justify-content: space-between;
+}
+
+.group {
+  display: flex;
+}

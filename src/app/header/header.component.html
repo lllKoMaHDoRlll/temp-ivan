@@ -1,18 +1,24 @@
 <c-header>
-  <c-container fluid>
-    <c-header-brand [routerLink]="['/']">Кроссовки</c-header-brand>
-    <c-header-nav class="ms-auto">
-      <c-nav-item>
-        <a [active]="true" cNavLink [routerLink]="['/']" (click)="scrollToProductsList()">Каталог</a>
-      </c-nav-item>
+  <c-container fluid >
+    <c-header-brand [routerLink]="['/']">
+      <img src="/favicon.ico" alt="Brand Logo" class="brand-logo">
+      <span class="brand-name">Кроссовки</span>
+    </c-header-brand>
+    <c-header-nav style="flex: 1 1 auto;" class="header-container">
+      <div style="width: 0;"></div>
+      <div class="group">
+        <c-nav-item>
+          <a [active]="true" cNavLink [routerLink]="['/']" (click)="scrollToProductsList()">Каталог</a>
+        </c-nav-item>
+        <c-nav-item>
+          <a cNavLink [routerLink]="['/']" (click)="scrollToContacts()">Контакты</a>
+        </c-nav-item>
+        <c-nav-item>
+          <a cNavLink [routerLink]="['/']" (click)="scrollToForm()">Обратная связь</a>
+        </c-nav-item>
+      </div>
       <c-nav-item>
         <a cNavLink [routerLink]="['/cart']">Корзина</a>
-      </c-nav-item>
-      <c-nav-item>
-        <a cNavLink [routerLink]="['/']" (click)="scrollToContacts()">Контакты</a>
-      </c-nav-item>
-      <c-nav-item>
-        <a cNavLink [routerLink]="['/']" (click)="scrollToForm()">Обратная связь</a>
       </c-nav-item>
     </c-header-nav>
   </c-container>
