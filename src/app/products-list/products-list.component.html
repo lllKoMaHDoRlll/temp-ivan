@@ -1,11 +1,26 @@
 <section id="products-list">
   <div id="header">
     <h2>Каталог</h2>
+    <div class="filter-outter">
+      <mat-form-field>
+        <mat-label>Бренд</mat-label>
+        <mat-select (valueChange)="onFilterChanged($event)">
+          <mat-option value="all">Любой</mat-option>
+          <mat-option
+            *ngFor="let brand of brands"
+            [value]="brand"
+            style="text-transform: capitalize;"
+          >
+            {{ brand }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
   </div>
   <mat-divider></mat-divider>
   <div id="body">
     <app-product-card
-      *ngFor="let product of productsList"
+      *ngFor="let product of filteredProductsList"
       [product]="product"></app-product-card>
   </div>
 </section>
