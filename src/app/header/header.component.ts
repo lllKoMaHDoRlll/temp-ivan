@@ -19,9 +19,6 @@ import { Router, RouterModule } from '@angular/router';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  scrollToProductsList() {
-    (document.getElementById("products-list") as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
-  }
   scrollToContacts() {
     (document.getElementById("contacts") as HTMLElement).scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
