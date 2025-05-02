@@ -1,0 +1,11 @@
+<section id="products-list">
+  <div id="header">
+    <h2>Хиты сезона</h2>
+  </div>
+  <mat-divider></mat-divider>
+  <div id="body">
+    <app-product-card
+      *ngFor="let product of productsList"
+      [product]="product"></app-product-card>
+  </div>
+</section>

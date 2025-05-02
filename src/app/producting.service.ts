@@ -167,4 +167,13 @@ export class ProductingService {
 
     return Array.from(brands);
   }
+
+  getFeaturedItems(): Product[] {
+    return [
+      this.productsList[2],
+      this.productsList[5],
+      this.productsList[8],
+      this.productsList[9],
+    ]
+  }
 }
