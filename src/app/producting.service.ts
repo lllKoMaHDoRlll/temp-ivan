@@ -174,6 +174,8 @@ export class ProductingService {
       this.productsList[5],
       this.productsList[8],
       this.productsList[9],
+      this.productsList[12],
+      this.productsList[3],
     ]
   }
 }
